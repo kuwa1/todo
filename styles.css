@@ -45,3 +45,36 @@ ul > li {
 #todo_template {
   display: none;
 }
+
+input#submit_btn {
+  position: relative;
+  display: inline-block;
+  width: 245px;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 10px auto 20px;
+  color: white;
+  box-shadow: 0 3px rgb(0, 51, 255);
+  background: rgb(0, 114, 254);
+}
+
+input#submit_btn:hover {
+  opacity: 0.8;
+}
+
+input#reset_btn {
+  float: right;
+  position: relative;
+  display: inline-block;
+  width: 240px;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 10px auto 20px;
+  color: white;
+  box-shadow: 0 3px rgb(0, 51, 255);
+  background: rgb(0, 114, 254);
+}
+
+input#reset_btn:hover {
+  opacity: 0.8;
+}

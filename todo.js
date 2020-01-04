@@ -20,7 +20,7 @@ $(function() {
 
   $('#todos').on('click', '.delete_todo', function() {
     var id = $(this).parents('li').data('id');
-    if (confirm("are you sure?")) {
+    if (confirm("消去しますか?")) {
     $.post('_ajax.php', {
       id: id,
       mode: 'delete',
