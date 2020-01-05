@@ -26,7 +26,7 @@ $(function() {
       token: $("#token").val()
     }, function() {
       $("#todo_" + id).fadeOut(300);
-      });
+    });
   });
 
   $('#new_todo_form').on('submit', function() {
@@ -43,8 +43,7 @@ $(function() {
         .find(".todo_title").text(title);
         $("#todos").append($li.fadeIn());
         $("#new_todo").val("").focus();
-      });
-      return false;
     });
-
+    return false;
+  });
 });
