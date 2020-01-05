@@ -38,11 +38,11 @@ class Todo {
 
     switch ($_POST["mode"]) {
       case "update":
-      return $this->_update();
+        return $this->_update();
       case "create":
-      return $this->_create();
+        return $this->_create();
       case "delete":
-      return $this->_delete();
+        return $this->_delete();
     }
   }
 

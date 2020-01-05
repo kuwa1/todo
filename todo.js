@@ -20,15 +20,13 @@ $(function() {
 
   $('#todos').on('click', '.delete_todo', function() {
     var id = $(this).parents('li').data('id');
-    if (confirm("消去しますか?")) {
     $.post('_ajax.php', {
       id: id,
       mode: 'delete',
       token: $("#token").val()
     }, function() {
-      $("#todo_" + id).fadeOut(800);
+      $("#todo_" + id).fadeOut(300);
       });
-    }
   });
 
   $('#new_todo_form').on('submit', function() {
@@ -43,7 +41,7 @@ $(function() {
         .attr("id", "todo_" + res.id)
         .data("id", res.id)
         .find(".todo_title").text(title);
-        $("#todos").prepend($li.fadeIn());
+        $("#todos").append($li.fadeIn());
         $("#new_todo").val("").focus();
       });
       return false;
